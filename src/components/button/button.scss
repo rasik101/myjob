@@ -1,0 +1,10 @@
+@import "styles/global";
+.btn {
+    background-color: $darkBlue;
+    padding: 10px 13px;
+    border: 1px solid $blue;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}

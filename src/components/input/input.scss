@@ -1,0 +1,38 @@
+@import "styles/global";
+.customInput {
+    padding: 12px 7px;
+    width: 100%;
+    border: 1px solid#C6C6C6;
+    border-radius: 5px;
+    &:focus {
+        outline: none;
+        border: 1px solid #00b0ff;
+    }
+}
+.labelContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3px;
+    font-size: 1rem;
+}
+.forgotPassword {
+    a {
+        color: $blue;
+        cursor: pointer;
+    }
+}
+.inputContainer {
+    width: 100%;
+    margin-bottom: 25px;
+}
+.error {
+    color: red;
+    font-size: 12px;
+}
+.errorcss {
+    border: 1px solid red;
+    &:focus {
+        outline: none;
+        border: 1px solid red;
+    }
+}

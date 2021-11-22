@@ -1,0 +1,19 @@
+@import "styles/global";
+.navyBlue-background {
+    background-color: $navyBlue;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 45vh;
+    right: 0;
+}
+.blue-background {
+    background-color: $lightBlue;
+    position: absolute;
+    z-index: -1;
+    height: 80%;
+    top: 45vh;
+    width: 100%;
+}

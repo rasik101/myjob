@@ -1,0 +1,47 @@
+@import "styles/global";
+.header {
+    padding: 10px;
+    @extend .container;
+    border-bottom: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h2 {
+        color: $blue;
+    }
+    span {
+        color: white;
+        cursor: pointer;
+    }
+}
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    color: white;
+
+    .logout {
+        color: black;
+        cursor: pointer;
+        position: absolute;
+        top: 67px;
+        right: 127px;
+        padding: 10px;
+        background-color: white;
+        border-radius: 5px;
+        font-size: 0.8rem;
+        padding-right: 30px;
+    }
+    .avatar {
+        width: 40px;
+        height: 40px;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: #d9efff;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,161 @@
+@import "styles/global";
+.posteByYou {
+    width: 70% !important;
+    .title {
+        margin-top: 20px;
+        font-size: 1.5rem;
+        color: #ffff;
+    }
+}
+.home {
+    color: #ffff;
+    margin-top: 10px;
+}
+.posts_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.post {
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    p {
+        width: 29ch;
+        color: #303f60;
+    }
+    .post_heading {
+        font-size: 0.9rem;
+    }
+    .post_description {
+        font-size: 0.8rem;
+        margin: 15px 0;
+    }
+    .bottomContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+        p {
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+        }
+    }
+    .viewApplication {
+        white-space: normal;
+        word-wrap: break-word;
+        background-color: $skyBlue;
+        color: #303f60;
+        font-weight: 200;
+        white-space: nowrap;
+        text-align: center;
+        border: none;
+        font-size: 0.8rem;
+    }
+}
+
+.no-post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    font-size: 1.5rem;
+    flex-direction: column;
+    color: $navyBlue;
+    gap: 30px;
+    button {
+        background-color: $blue;
+    }
+}
+
+.modalContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-overlay {
+    @extend .container;
+    background-color: #ffff;
+    padding: 20px;
+    height: 80vh;
+    width: 75vh;
+    border-radius: 15px;
+}
+.modal-heading {
+    border-bottom: 1px solid #557da526;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img {
+        cursor: pointer;
+    }
+}
+.applicants-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #557da526;
+    height: 86%;
+    overflow-x: auto;
+}
+
+.noApplicants {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #557da526;
+    height: 86%;
+}
+.applicantCard {
+    padding: 10px;
+    height: fit-content;
+    background-color: #fff;
+    .skills {
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    .skillsValue {
+        font-size: 0.89rem;
+    }
+    .avatar {
+        border-radius: 100%;
+        background-color: $skyBlue;
+        padding: 15px;
+    }
+    .avatarContainer {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 30px;
+        h4 {
+            font-size: 0.98rem;
+            font-weight: 200;
+        }
+        p {
+            font-size: 0.89rem;
+        }
+    }
+}

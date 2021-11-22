@@ -1,0 +1,27 @@
+@import "styles/global";
+.postJob {
+    @extend .container;
+    padding: 20px;
+    background-color: #ffff;
+    border-radius: 10px;
+    margin-top: 10vh;
+    width: 35%;
+    .submitButton {
+        display: block;
+        margin: 0 auto;
+        color: white;
+        background-color: $blue;
+        padding: 10px 25px;
+        font-size: large;
+    }
+    h2 {
+        margin-bottom: 20px;
+    }
+}
+.home {
+    color: #ffff;
+    margin-top: 10px !important;
+    a {
+        color: #ffff;
+    }
+}
